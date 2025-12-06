@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UML Mock Exam Quiz</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      padding: 40px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 30px;
+      font-size: 2.5em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+    .question {
+      margin-bottom: 25px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+    }
+    .question:hover {
+      transform: translateY(-3px);
+    }
+    .question h3 {
+      margin-bottom: 15px;
+      font-size: 1.2em;
+      color: #444;
+    }
+    .option {
+      display: block;
+      padding: 10px 14px;
+      margin: 6px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+    }
+    .option:hover {
+      background: #f0f0f0;
+      transform: scale(1.02);
+    }
+    .option.correct {
+      background: #4CAF50;
+      color: white;
+      border-color: #4CAF50;
+    }
+    .option.wrong {
+      background: #f44336;
+      color: white;
+      border-color: #f44336;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>UML Mock Exam Quiz</h1>
+
+  <!-- Question 1 -->
+  <div class="question">
+    <h3>Q1: UML2 use case diagram (lab test + protocol)</h3>
+    <span class="option" data-correct="false">a. Use Case with include</span>
+    <span class="option" data-correct="false">b. Another include</span>
+    <span class="option" data-correct="false">c. Extend relation</span>
+    <span class="option" data-correct="true">d. Extend relation with protocol</span>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question">
+    <h3>Q2: The &lt;&lt;extend&gt;&gt; relationship means...</h3>
+    <span class="option" data-correct="false">a. B can be executed instead of A</span>
+    <span class="option" data-correct="false">b. A cannot be executed without B</span>
+    <span class="option" data-correct="false">c. B might or might not invoke A</span>
+    <span class="option" data-correct="true">d. B can extend A</span>
+    <span class="option" data-correct="false">e. A can extend B</span>
+    <span class="option" data-correct="true">f. A might or might not invoke B</span>
+    <span class="option" data-correct="false">g. B always has to invoke A</span>
+  </div>
+
+  <  <!-- Question 3 -->
+  <div class="question">
+    <h3>Q3: The &lt;&lt;include&gt;&gt; relationship means...</h3>
+    <span class="option" data-correct="true">a. A cannot be executed without B</span>
+    <span class="option" data-correct="false">b. A might or might not invoke use case B</span>
+    <span class="option" data-correct="false">c. B cannot be executed without A</span>
+    <span class="option" data-correct="false">d. B can be executed instead of A</span>
+    <span class="option" data-correct="false">e. Behaviour of B might or might not be inserted into A</span>
+    <span class="option" data-correct="false">f. Behaviour of A might or might not be inserted into B</span>
+    <span class="option" data-correct="true">g. Behaviour of B always has to be inserted into A</span>
+    <span class="option" data-correct="false">h. Behaviour of A always has to be inserted into B</span>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="question">
+    <h3>Q4: Which combinations of actors can execute Use Case B?</h3>
+    <span class="option" data-correct="false">a. Only R</span>
+    <span class="option" data-correct="false">b. Only S</span>
+    <span class="option" data-correct="true">c. R or S</span>
+    <span class="option" data-correct="true">d. R or S or U</span>
+    <span class="option" data-correct="false">e. S and R must be together</span>
+  </div>
+
+  <!-- Question 5 -->
+  <div class="question">
+    <h3>Q5: Which combinations of actors can execute Use Case A?</h3>
+    <span class="option" data-correct="false">a. Only X</span>
+    <span class="option" data-correct="false">b. Only Y</span>
+    <span class="option" data-correct="true">c. Either X or Y</span>
+    <span class="option" data-correct="false">d. Both X and Y together</span>
+  </div>
+
+  <!-- Question 6 -->
+  <div class="question">
+    <h3>Q6: Which statements about this UML class diagram snippet are true?</h3>
+    <span class="option" data-correct="false">a. One object of A is associated with exactly one C and two B</span>
+    <span class="option" data-correct="true">b. One object of B may be associated with multiple A</span>
+    <span class="option" data-correct="true">c. Deleting A deletes its contained B-objects</span>
+    <span class="option" data-correct="true">d. The diamond near A is composition</span>
+    <span class="option" data-correct="true">e. One A may contain two B</span>
+  </div>
+
+  <!-- Question 7 -->
+  <div class="question">
+    <h3>Q7: Which statements about compositions are true?</h3>
+    <span class="option" data-correct="true">a. A part belongs to only one composite at a time</span>
+    <span class="option" data-correct="true">b. Multiplicity of composite aggregation may be ≥1</span>
+    <span class="option" data-correct="false">c. Composite aggregation is transitive</span>
+    <span class="option" data-correct="true">d. Deleting the composite deletes the parts</span>
+  </div>
+
+  <!-- Question 8 -->
+  <div class="question">
+    <h3>Q8: How to model: A fair is visited by at least one visitor; one visitor visits at least one fair.</h3>
+    <span class="option" data-correct="true">a. Many-to-many association with multiplicities 1..*</span>
+    <span class="option" data-correct="false">b. One-to-one relationship</span>
+  </div>
+
+  <!-- Question 9 -->
+  <div class="question">
+    <h3>Q9: A generalization...</h3>
+    <span class="option" data-correct="true">a. Allows hierarchical relations between classes</span>
+    <span class="option" data-correct="true">b. Allows subclasses to inherit behaviour</span>
+    <span class="option" data-correct="true">c. Allows substituting subclass where superclass is expected</span>
+    <span class="option" data-correct="false">d. Allows only common attributes to be moved to superclass</span>
+  </div>
+
+  <!-- Question 10 -->
+  <div class="question">
+    <h3>Q10: There are exactly two kinds of participants: Member and Guest. Guest must be invited by a member.</h3>
+    <span class="option" data-correct="false">a. Wrong diagram</span>
+    <span class="option" data-correct="false">b. Wrong diagram</span>
+    <span class="option" data-correct="true">c. Correct: Generalization with association Guest → Member</span>
+    <span class="option" data-correct="false">d. Wrong diagram</span>
+  </div>
+
+  <!-- Question 11 -->
+  <div class="question">
+    <h3>Q11: Visibilities in UML class diagrams?</h3>
+    <span class="option" data-correct="true">a. public</span>
+    <span class="option" data-correct="true">b. private</span>
+    <span class="option" data-correct="true">c. protected</span>
+    <span class="option" data-correct="true">d. package</span>
+    <span class="option" data-correct="true">e. all</span>
+    <span class="option" data-correct="false">f. friends</span>
+  </div>
+
+  <!-- Question 12 -->
+  <div class="question">
+    <h3>Q12: A class diagram...</h3>
+    <span class="option" data-correct="true">a. Shows the static view</span>
+    <span class="option" data-correct="false">b. Shows the dynamic view</span>
+    <span class="option" data-correct="false">c. Shows the interaction view</span>
+    <span class="option" data-correct="false">d. Shows the practical view</span>
+  </div>
+
+  <!-- Question 13 -->
+  <div class="question">
+    <h3>Q13: Which traces are possible?</h3>
+    <span class="option" data-correct="true">A. a → b → c → d</span>
+    <span class="option" data-correct="false">B. b → a → d → c</span>
+    <span class="option" data-correct="false">C. c → d → a → b</span>
+    <span class="option" data-correct="false">D. a → c → b → d</span>
+    <span class="option" data-correct="false">E. c → a → d → b</span>
+    <span class="option" data-correct="false">F. d → a → b → c</span>
+    <span class="option" data-correct="true">G. b → a → c → d</span>
+  </div>
+
+  <!-- Question 14 -->
+  <div class="question">
+    <h3>Q14: Which traces are possible?</h3>
+    <span class="option" data-correct="true">A. a → b → c</span>
+    <span class="option" data-correct="false">B. c → a → b</span>
+    <span class="option" data-correct="true">C. a → c → b</span>
+    <span class="option" data-correct="false">D. b → a → c</span>
+    <span class="option" data-correct="false">E. b → c → a</span>
+    <span class="option" data-correct="false">F. c → b → a</span>
+  </div>
+
+  <!-- Question 15 -->
+  <div class="question">
+    <h3>Q15: Which traces are possible?</h3>
+    <span class="option" data-correct="true">A. a → d → c → b</span>
+    <span class="option" data-correct="true">B. a → c → d → b</span>
+    <span class="option" data-correct="false">C. a → c → b → d</span>
+    <span class="option" data-correct="false">D. d → a → c → b</span>
+    <span class="option" data-correct="false">E. d → c → a → b</span>
+    <span class="option" data-correct="false">F. a → b → c → d</span>
+    <span class="option" data-correct="false">G. c → b → a → d</span>
+    <span class="option" data-correct="false">H. d → a → b → c</span>
+    <span class="option" data-correct="false">I. d → c → b → a</span>
+  </div>
+
+  <!-- Question 16 -->
+  <div class="question">
+    <h3>Q16: Which traces are possible?</h3>
+    <span class="option" data-correct="true">A. a → b → c</span>
+    <span class="option" data-correct="false">B. c → a → b</span>
+    <span class="option" data-correct="true">C. a → c → b</span>
+    <span class="option" data-correct="false">D. b → a → c</span>
+  </div>
+
+  <!-- Question 17 -->
+  <div class="question">
+    <h3>Q17: Which traces are possible?</h3>
+    <span class="option" data-correct="true">A. d</span>
+    <span class="option" data-correct="true">B. a → b → c → d</span>
+    <span class="option" data-correct="true">C. c → b → a → a → b → c → d</span>
+    <span class="option" data-correct="false">D. c → a → b → d</span>
+    <span class="option" data-correct="true">E. a → b → c → a → b → c → d</span>
+  </div>
+
+  <!-- Question 18 -->
+  <div class="question">
+    <h3>Q18: How to ensure b happens immediately after a?</h3>
+    <span class="option" data-correct="false">a. Put a and b in a critical fragment</span>
+    <span class="option" data-correct="false">b. Nothing, already correct</span>
+    <span class="option" data-correct="true">c. Put a and b into a strict fragment</span>
+    <span class="option" data-correct="false">d. Put b and c into a strict fragment</span>
+    <span class="option" data-correct="false">e. Put d and f into a critical fragment</span>
+  </div>
+
+  <!-- Question 19 -->
+  <div class="question">
+    <h3>Q19: Which traces are possible?</h3>
+    <span class="option" data-correct="true">1. a → b → c</span>
+    <span class="option" data-correct="false">2. b → a → c</span>
+    <span class="option" data-correct="false">3. c → b → a</span>
+    <span class="option" data-correct="true">4. b → c → a</span>
+  </div>
+
+  <!-- Question 20 -->
+  <div class="question">
+    <h3>Q20: Value of x after events e2 e1 e4 e3 e5?</h3>
+    <span class="option" data-correct="false">A. 13</span>
+    <span class="option" data-correct="false">B. 26</span>
+    <span class="option" data-correct="true">C. 24</span>
+    <span class="option" data-correct="false">D. 25</span>
+  </div>
+
+  <!-- Question 21 -->
+  <div class="question">
+    <h3>Q21: Which statements are correct?</h3>
+    <span class="option" data-correct="true">a. J becomes inactive when d &gt; a</span>
+    <span class="option" data-correct="true">b. H is active initially</span>
+    <span class="option" data-correct="false">c. f2 in H is an event</span>
+    <span class="option" data-correct="false">d. J and H can be active at the same time</span>
+  </div>
+
+  <!-- Question 22 -->
+  <div class="question">
+    <h3>Q22: Which statements about state machines are true?</h3>
+    <span class="option" data-correct="false">a. Transitions can include a state</span>
+    <span class="option" data-correct="true">b. Activities can be executed inside states and transitions</span>
+    <span class="option" data-correct="false">c. Events trigger states</span>
+    <span class="option" data-correct="true">d. when(date=31.12.2007) is a time event</span>
+    <span class="option" data-correct="true">e. If event triggers transition and guard is empty, state is exited and do-activity ends</span>
+  </div>
+
+  <!-- Question 23 -->
+  <div class="question">
+    <h3>Q23: What is the correct transition label syntax?</h3>
+    <span class="option" data-correct="true">a. event[guard]/effect</span>
+    <span class="option" data-correct="false">b. effect[guard]/event</span>
+    <span class="option" data-correct="false">c. [effect]guard/event</span>
+    <span class="option" data-correct="false">d. [guard]effect/event</span>
+    <span class="option" data-correct="false">e. [effect]event/guard</span>
+  </div>
+
+  <!-- Question 24 -->
+  <div class="question">
+    <h3>Q24: Value of x after e1 e3 e4 e6 e7 e4?</h3>
+    <span class="option" data-correct="false">A. 3</span>
+    <span class="option" data-correct="false">B. 4</span>
+    <span class="option" data-correct="true">C. 5</span>
+    <span class="option" data-correct="false">D. 6</span>
+  </div>
+
+  <!-- Question 25 -->
+  <div class="question">
+    <h3>Q25: MVC – who handles user action?</h3>
+    <span class="option" data-correct="true">a. The Controller</span>
+    <span class="option" data-correct="false">b. The Model</span>
+    <span class="option" data-correct="false">c. The View</span>
+    <span class="option" data-correct="false">d. The Database</span>
+  </div>
+
+
+  <!-- Question 25 -->
+  <div class="question">
+    <h3>Q25: MVC pattern – who handles user action?</h3>
+    <span class="option" data-correct="true">a. The Controller</span>
+    <span class="option" data-correct="false">b. The Model</span>
+    <span class="option" data-correct="false">c. The View</span>
+    <span class="option" data-correct="false">d. The Database</span>
+  </div>
+
+  <script>
+    document.querySelectorAll('.option').forEach(option => {
+      option.addEventListener('click', () => {
+        option.parentElement.querySelectorAll('.option').forEach(opt => {
+          opt.classList.remove('correct', 'wrong');
+        });
+        if (option.dataset.correct === "true") {
+          option.classList.add('correct');
+        } else {
+          option.classList.add('wrong');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
